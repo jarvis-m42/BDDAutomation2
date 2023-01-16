@@ -1,6 +1,6 @@
-package org.example.stepdef;
+package org.carnera.stepdef;
 
-import org.example.Utility.PropertyFileReader;
+import org.carnera.Utility.PropertyFileReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;

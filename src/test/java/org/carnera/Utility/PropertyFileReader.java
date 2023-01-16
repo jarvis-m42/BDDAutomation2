@@ -1,4 +1,4 @@
-package org.example.Utility;
+package org.carnera.Utility;
 
 import java.io.FileInputStream;
 import java.util.Properties;

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 @CucumberOptions(
         features = "src/test/resources/features/CarneraHomepage.feature",
-        glue = {"org.example.stepdef"},
+        glue = {"org.carnera.stepdef"},
         tags = "@UATTesting",plugin = {"pretty",
         "html:target/site/cucumber-pretty.html",
         "json:target/cucumber.json"},
