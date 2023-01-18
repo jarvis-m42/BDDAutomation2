@@ -1,10 +1,13 @@
 package org.carnera.stepdef;
 
+import org.carnera.ReusableMethods.ElementUtils;
 import org.carnera.Utility.PropertyFileReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
@@ -16,6 +19,7 @@ public class CarneraHomepageStepDef {
     public  static WebDriver driver;
 
     PropertyFileReader obj = new PropertyFileReader();
+    ElementUtils selenium=new ElementUtils(driver);
 
     @Given("Open chrome browser and enter URL")
     public void openChromeBrowserAndEnterURL() throws Throwable{
@@ -34,6 +38,10 @@ public class CarneraHomepageStepDef {
 
     @And("Verify homepage index of various pages")
     public void verifyHomepageIndexOfVariousPages() throws  Throwable{
+        WebElement startups=driver.findElement(By.xpath
+                ("//*[@class='header-nav-item header-nav-item--collection']/a[contains(text(),'Startups')]"));
+        Assert.assertEquals(startups.getText(),"Startups");
+
         Thread.sleep(3000);
         driver.quit();
     }
