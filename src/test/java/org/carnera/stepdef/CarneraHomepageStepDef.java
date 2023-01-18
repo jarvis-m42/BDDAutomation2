@@ -23,6 +23,7 @@ public class CarneraHomepageStepDef {
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(properties.getProperty("browser.baseURL"));
+        //driver.get("https://www.getcarnera.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 

@@ -1,4 +1,4 @@
-package org.example.TestRunner;
+package org.carnera.TestRunner;
 
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;

@@ -8,7 +8,7 @@ public class PropertyFileReader {
     public Properties getProperty(){
         Properties properties=new Properties();
         try{
-            properties.load(new FileInputStream("src/resources/browser-config.properties"));
+            properties.load(new FileInputStream("/Users/harender/IdeaProjects/BDDAutomation2/src/test/resources/browserConfig.properties"));
         }catch (Exception e){
             System.out.println("Exception: "+e);
         }
