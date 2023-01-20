@@ -1,0 +1,4 @@
+browser: chrome
+carnera:
+  webApp: "https://www.getcarnera.com/"
+  API: "sample"
