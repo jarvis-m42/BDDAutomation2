@@ -1,21 +1,9 @@
 package org.carnera.stepdef;
 
-import io.cucumber.java.en.Then;
-import org.carnera.ReusableMethods.ElementUtils;
-import org.carnera.Utility.PropertyFileReader;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.carnera.base.BaseTest;
 import org.carnera.pageObjects.HomePage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-
-import java.time.Duration;
-import java.util.Properties;
 
 public class CarneraHomepageStepDef extends BaseTest {
 
@@ -23,16 +11,18 @@ public class CarneraHomepageStepDef extends BaseTest {
 
     @Then("I see text {string} is visible")
     public void iSeeTextIsVisible(String text) {
-        System.out.println("Carnera step "+driver);
-        hm.checkText();
+        hm.checkText(text);
     }
 
     @And("I click on contact us button")
     public void iClickOnContactUsButton() {
+        clickElement(hm.getContactUs());
     }
 
     @Then("I fill form with {string},{string},{string},{string},{string}")
-    public void iFillFormWith(String arg0, String arg1, String arg2, String arg3, String arg4) {
+    public void iFillFormWith(String name, String lname, String email, String about, String time) {
+
+        sendText(hm.getFirstName(), name).sendText(hm.getLastName(), lname).sendText(hm.getEmail(), email).sendText(hm.getAbout(), about).sendText(hm.getTimeToContact(), time);
     }
 
 }

@@ -6,7 +6,7 @@ Feature: GetCarnera homepage validations
     Then I see text 'Contact Us' is visible
     And I click on contact us button
     Then I fill form with "<name>","<lastName>","<email>","<about>","<time>"
-
-Examples:
-    |name|lastName|email|about|time|
-    | Rohit   | Bhosale       |  rt@gmail.com   |  Testing   |   anyday |
+    Then I close all tabs
+    Examples:
+      | name  | lastName | email        | about   | time   |
+      | Rohit | Bhosale  | rt@gmail.com | Testing | anyday |

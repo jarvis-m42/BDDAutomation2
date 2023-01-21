@@ -1,4 +1,4 @@
-package org.carnera.client;
+package org.carnera.utils;
 
 
 import org.yaml.snakeyaml.Yaml;
