@@ -14,11 +14,4 @@ public class UIStepdef extends BaseTest {
         driver.get(ReadConfig.getAppURL(appName));
     }
 
-
-    @Then("I close all tabs")
-    public void iCloseAllTabs() {
-
-        hardWait(5000);
-        closeAllTabs();
-    }
 }
