@@ -11,11 +11,6 @@ import java.util.Map;
 public class ReadConfig {
 
 
-//    public static void main(String[] args) {
-//
-//         System.out.println(getBrowser());
-//    }
-
     public static String getAppURL(String appName) {
         Yaml yaml = new Yaml();
         InputStream inputStream = null;

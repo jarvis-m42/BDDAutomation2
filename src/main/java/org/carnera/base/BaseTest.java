@@ -32,10 +32,6 @@ public class BaseTest {
         driver.close();
     }
 
-    public void closeAllTabs() {
-        driver.quit();
-    }
-
     public WebElement waitForElement(WebElement element, long durationInSeconds) {
 
         WebElement webElement = null;
