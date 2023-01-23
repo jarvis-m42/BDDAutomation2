@@ -14,14 +14,6 @@ import org.testng.annotations.BeforeClass;
         monochrome = true)
 public class TestRunner extends AbstractTestNGCucumberTests {
 
-    @BeforeClass
-    public void setupBeforeClass() {
-        // BaseTest.Init();
-    }
 
-    @AfterClass
-    public void afterClass() throws InterruptedException {
-
-    }
 
 }

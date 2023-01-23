@@ -37,11 +37,7 @@ public class Servicehooks {
     {
         return ((TakesScreenshot)BaseTest.driver).getScreenshotAs(OutputType.BASE64);
     }
-//    @AfterStep
-//    public void as(Scenario scenario) throws IOException, InterruptedException
-//    {
-//        ExtentCucumberAdapter.getCurrentStep().log(Status.PASS, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Screenshot()).build());
-//    }
+
     @After
     public void TearDown(Scenario scenario) {
         if(scenario.isFailed())

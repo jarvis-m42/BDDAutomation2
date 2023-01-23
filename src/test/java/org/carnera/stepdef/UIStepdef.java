@@ -10,7 +10,6 @@ public class UIStepdef extends BaseTest {
 
     @Given("I open {string} application")
     public void iOpenGivenApplication(String appName) {
-
         driver.get(ReadConfig.getAppURL(appName));
     }
 
