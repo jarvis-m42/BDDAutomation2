@@ -1,1 +1,5 @@
 /.idea/
+/reports/
+/target/
+/target/site/
+/target/test-classes/
