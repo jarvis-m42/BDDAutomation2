@@ -20,10 +20,6 @@ import java.util.List;
 
 public class Servicehooks {
 
-    public String url;
-    protected WebDriver driver;
-
-    BaseTest baseTest;
 
     @Before
     public void setup(Scenario scenario) {

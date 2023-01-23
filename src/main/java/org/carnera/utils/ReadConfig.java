@@ -10,7 +10,6 @@ import java.util.Map;
 
 public class ReadConfig {
 
-
     public static String getAppURL(String appName) {
         Yaml yaml = new Yaml();
         InputStream inputStream = null;

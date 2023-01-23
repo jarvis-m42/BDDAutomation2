@@ -96,7 +96,6 @@ public class BaseTest {
 
     }
 
-
     public void hardWait(int miliSeconds) {
         try {
             Thread.sleep(miliSeconds);
