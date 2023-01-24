@@ -1,6 +1,8 @@
 package org.carnera.pageObjects;
 
 import lombok.Data;
+import org.carnera.utils.Constants;
+import org.carnera.utils.POIConfig;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +11,12 @@ import org.testng.Assert;
 
 @Data
 public class HomePage {
+
+    //creating object of POIConfig class
+    static POIConfig excelUtils = new POIConfig();
+
+    //using the Constants class values for excel file path
+    static String excelFilePath = Constants.Path_TestData+Constants.File_TestData;
 
     WebDriver driver;
 
