@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 @CucumberOptions(
         features = "src/test/resources/features/CarneraHomepage.feature",
         glue = {"org.carnera.stepdef", "org.carnera.Hooks"},
-        tags = "@UATTesting", plugin = {"pretty",
+        tags = "@TestID002", plugin = {"pretty",
         "html:target/site/cucumber-pretty.html",
         "json:target/cucumber.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true)

@@ -21,5 +21,5 @@ Feature: Test cases for Carnera Application
     Then I fill form with "<name>","<lastName>","<email>","<about>","<time>"
 
     Examples:
-      | name  | lastName | email        | about   | time   |
-      | Rohit | Bhosale  | rt@gmail.com | Testing | anyday |
+      | name    | lastName | email        | about   | time   |
+      | Carnera | Pune     | CP@gmail.com | Testing | anyday |
